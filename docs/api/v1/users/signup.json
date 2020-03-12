@@ -1,0 +1,40 @@
+{
+  "published": true,
+  "name": "User Signup",
+  "end_point": "api/v1/users",
+  "http_method": "POST",
+  "params": [{
+      "key": "user[email]",
+      "required": true,
+      "type": "String",
+      "description": "Email of User"
+    },
+    {
+      "key": "user[password]",
+      "required": true,
+      "type": "String",
+      "description": "Password of User"
+    }
+  ],
+  "header": {},
+  "examples": [{
+    "request": {
+      "user": {
+        "email": "naveen.rawat@berylsystems.com",
+        "password": "*********"
+      }
+    },
+    "response": {
+        "message": "Account Created",
+        "status": 200,
+        "user": {
+            "id": 13,
+            "email": "1tarun12@gmail.com",
+            "first_name": null,
+            "last_name": null,
+            "phone_no": null,
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxM30.sRoXF7DtxSiRk0kxIreTInV1zteNF3nUvSO1M2I4mJE"
+        }
+    }
+  }]
+}

@@ -1,0 +1,40 @@
+{
+  "published": true,
+  "name": "Login User",
+  "end_point": "api/v1/users/sign_in",
+  "http_method": "POST",
+  "params": [{
+      "key": "user[email]",
+      "required": true,
+      "type": "String",
+      "description": "Email of User"
+    },
+    {
+      "key": "user[password]",
+      "required": true,
+      "type": "String",
+      "description": "Password of User"
+    }
+  ],
+  "header": {},
+  "examples": [{
+    "request": {
+      "user": {
+        "email": "naveen.rawat@berylsystems.com",
+        "password": "*********"
+      }
+    },
+    "response": {
+      "message": "Login Successfully",
+      "status": 200,
+      "user": {
+          "id": 8,
+          "email": "tarun12@gmail.com",
+          "first_name": "Tarun",
+          "last_name": "Garg",
+          "phone_no": 9716436972,
+          "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4fQ.f-41QFDYxMopXKNi_FHb6YhYKTKG5Vl3wiaxc9S2avc"
+      }
+    }
+  }]
+}

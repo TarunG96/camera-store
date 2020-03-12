@@ -1,0 +1,42 @@
+{
+  "published": true,
+  "name": "List Products of Category",
+  "end_point": "api/v1/categories/:id/category_products",
+  "http_method": "Get",
+  "header": {},
+  "examples": [{
+    "response": {
+        "products": [
+            {
+                "id": 1,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 0.0
+            },
+            {
+                "id": 2,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 0.0
+            },
+            {
+                "id": 3,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 10.2
+            },
+            {
+                "id": 4,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 10.2
+            }
+        ],
+        "status": 200
+    }
+  }]
+}

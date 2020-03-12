@@ -1,0 +1,38 @@
+{
+  "published": true,
+  "name": "List Categories",
+  "end_point": "api/v1/categories",
+  "http_method": "Get",
+  "header": {},
+  "examples": [{
+    "response": {
+        "categories": [
+            {
+                "id": 1,
+                "name": "abc",
+                "category_type": "Mirrorless",
+                "model": 2011
+            },
+            {
+                "id": 2,
+                "name": "abc",
+                "category_type": "Mirrorless",
+                "model": 2011
+            },
+            {
+                "id": 3,
+                "name": "abc",
+                "category_type": "Mirrorless",
+                "model": 2011
+            },
+            {
+                "id": 4,
+                "name": "abc",
+                "category_type": "Mirrorless",
+                "model": 2011
+            }
+        ],
+        "status": 200
+    }
+  }]
+}

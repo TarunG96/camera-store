@@ -1,0 +1,25 @@
+{
+  "published": true,
+  "name": "Add to Cart",
+  "end_point": "api/v1/carts/add_to_cart",
+  "http_method": "POST",
+  "params": [{
+      "key": "product_ids[]",
+      "required": true,
+      "type": "Array",
+      "description": "Array of Product Ids"
+    }
+  ],
+  "header": {
+    "Authorization": "User TOken"
+  },
+  "examples": [{
+    "request": {
+      "product_ids[]": [1,2]      
+    },
+    "response": {
+        "message": "Cart updated",
+        "status": 200
+    }
+  }]
+}

@@ -1,0 +1,32 @@
+{
+  "published": true,
+  "name": "View Cart",
+  "end_point": "api/v1/carts/view_cart",
+  "http_method": "GET",
+  "header": {
+    "Authorization": "User Token"
+  },
+  "examples": [{
+
+    "response": {
+        "products": [
+            {
+                "id": 1,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 0.0
+            },
+            {
+                "id": 2,
+                "name": "abc",
+                "description": "2011hgvjhvhj",
+                "make": 2011,
+                "price": 0.0
+            }
+        ],
+        "message": "Products in My cart",
+        "status": 200
+    }
+  }]
+}

@@ -1,0 +1,58 @@
+{
+  "published": true,
+  "name": "Create Product",
+  "end_point": "api/v1/products",
+  "http_method": "POST",
+  "params": [
+    {
+      "key": "product[name]",
+      "required": true,
+      "type": "String",
+      "description": "Name of Product"
+    },
+    {
+      "key": "product[description]",
+      "type": "String",
+      "description": "Description of Product"
+    },
+    {
+      "key": "product[price]",
+      "type": "Float",
+      "description": "Price of Product"
+    },
+    {
+      "key": "product[make]",
+      "type": "Integer",
+      "description": "Make of Product"
+    },
+    {
+      "key": "product[category_id]",
+      "required": true,
+      "type": "Integer",
+      "description": "Cateory of Product"
+    }
+  ],
+  "header": {},
+  "examples": [{
+    "request": {
+        "product": {
+                   "name": "abc",
+            "description": "2011hgvjhvhj",
+                  "price": "10.2",
+                   "make": "2011",
+            "category_id": "1"
+        }
+    },
+    "response": {
+        "product": {
+            "id": 4,
+            "name": "abc",
+            "description": "2011hgvjhvhj",
+            "make": 2011,
+            "price": 10.2
+        },
+        "status": 200,
+        "message": "Saved Successfully"
+    }
+  }]
+}

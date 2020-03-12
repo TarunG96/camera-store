@@ -1,0 +1,44 @@
+{
+  "published": true,
+  "name": "Create Category",
+  "end_point": "api/v1/categories",
+  "http_method": "POST",
+  "params": [
+    {
+      "key": "product[name]",
+      "required": true,
+      "type": "String",
+      "description": "Name of Category"
+    },
+    {
+      "key": "product[category_type]",
+      "type": "String",
+      "description": "Category type of Category"
+    },
+    {
+      "key": "product[model]",
+      "type": "Integer",
+      "description": "Model of Category"
+    }
+  ],
+  "header": {},
+  "examples": [{
+    "request": {
+        "category": {
+                     "name": "jlksdfj",
+            "category_type": "Mirrorless",
+                    "model": "2099"
+        }
+    },
+    "response": {
+        "category": {
+            "id": 5,
+            "name": "jlksdfj",
+            "category_type": "Mirrorless",
+            "model": 2099
+        },
+        "status": 200,
+        "message": "Saved Successfully"
+    }
+  }]
+}

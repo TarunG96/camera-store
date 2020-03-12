@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Apidoco::Engine, at: "/docs"
   namespace 'api' do
     namespace "v1" do
       devise_for :users, controllers: {
