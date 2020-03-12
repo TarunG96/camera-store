@@ -7,7 +7,12 @@ Rails.application.routes.draw do
       }
       devise_scope :user do
       end
-      resources :categories
+      resources :categories do
+        member do
+          get :category_products
+        end
+      end
+      resources :products
     end
   end
 end
