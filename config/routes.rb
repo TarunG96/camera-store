@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       }
       devise_scope :user do
       end
-
+      resources :categories
     end
   end
 end
