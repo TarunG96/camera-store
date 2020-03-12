@@ -4,9 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
 
-  def full_name
-    return self.first_name + " " + self.last_name
-  end
-
+  has_one :cart
 
 end

@@ -6,12 +6,21 @@ Rails.application.routes.draw do
         registrations: "api/v1/users/registrations"
       }
       devise_scope :user do
+        resources :carts do
+          collection do
+            get :view_cart
+            post :add_to_cart
+            post :remove_from_cart
+          end
+        end
       end
+
       resources :categories do
         member do
           get :category_products
         end
       end
+
       resources :products
     end
   end
