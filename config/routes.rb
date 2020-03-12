@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'home#index'
   mount Apidoco::Engine, at: "/docs"
   namespace 'api' do
     namespace "v1" do
